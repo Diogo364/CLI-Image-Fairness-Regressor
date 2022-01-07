@@ -27,14 +27,14 @@ If one is in need of assess the level of diversity of an unlabeled image dataset
         - [Optional:](#optional)
       - [Example of usage:](#example-of-usage)
       - [Instalation](#instalation)
-    - [Docker](#docker)
-      - [1. Building the Image:](#1-building-the-image)
-      - [2. Running the Container:](#2-running-the-container)
+    - [3. Docker](#3-docker)
+      - [Building the Image:](#building-the-image)
+      - [Running the Container:](#running-the-container)
         - [Pointers:](#pointers)
   - [Technologies](#technologies)
   - [Logs](#logs)
   - [References](#references)
-  - [Autor](#autor)
+  - [Author](#author)
 
 ---
 ## How to use
@@ -104,14 +104,14 @@ The CLI application uses an `--input` CSV file containing the the full path to a
 All requirements are in the `requirements.txt` file. From pip, just run in the terminal the following command and you are ready to go.
 > ```$ pip install -r requirements.txt```
 
-### Docker
+### 3. Docker
 The shellscript files under the project root were made to simplify the process of using the project with Docker, therefore one only need to follow the steps below:
 
-#### 1. Building the Image:
+#### Building the Image:
 Simply run the `docker_build.sh` script. It will automatically map your username, user id and group id to the image.
 ```$ ./docker_build.sh```
 
-#### 2. Running the Container:
+#### Running the Container:
 Within the `docker_run.sh` script are all the parameters and volumes needed in order to run the application from a docker container. Just need to follow the pointers below:
 
 ```$ ./docker_run.sh```
@@ -158,7 +158,7 @@ Karkkainen, K., & Joo, J. (2021). FairFace: Face Attribute Dataset for Balanced 
 
 
 
-## Autor
+## Author
 
 <a href="https://github.com/Diogo364" >
  <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/44041957?s=400&u=44d208aa5d0b6df75c0bb60e2583fe6015cc0ed0&v=4" width="100px;" alt=""/>
